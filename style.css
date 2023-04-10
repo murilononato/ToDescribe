@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --hue: 10deg;
+    --sat: 50%;
+    --blur: 0px;
+  }
+
+body{
+    background-color: rgb(236, 230, 230);
+}
+
+header{
+    text-align: center;
+    margin-top: 30px;
+}
+
+header > h1{
+    color: crimson;
+    font-family: Impact;
+}
+
+header > p{
+    font-size: 25px;
+    padding: 10px;
+}
+
+main{
+    text-align: center;
+    align-items: center;
+}
+
+main > h2{
+    padding: 30px;
+    font-size: 50px;
+    color: rgb(255, 72, 0);
+}
+
+main > button{
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 
+    0 -0.5em 0.5em transparent,
+    0 0.5em 0.5em transparent,
+    0 0.25em 0.3em -0.2em hsla(var(--hue), var(--sat), 50%, 0.46), 
+    0 0.25em 0.75em hsla(var(--hue), calc(var(--sat) - 10%), 40%, 0.3);
+
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+article{
+    text-align: center;
+    margin-top: 20px;
+}
+
+article > h2{
+    font-family: Impact;
+    margin-top: 25px;
+    color: crimson;
+    font-size: 35px;
+}
+
+ul > li{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+footer{
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
