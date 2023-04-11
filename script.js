@@ -1,5 +1,5 @@
 const play = window.document.getElementById("play")
-
+var NumberWord = window.document.querySelector(".NumberOfWords")
 const word = window.document.getElementById('thing')
 
 play.addEventListener("click" , (e) =>{
@@ -8,6 +8,8 @@ play.addEventListener("click" , (e) =>{
     word.innerHTML=`${object}`
 
 })
+
+
 
 function getRandomObject() {
     const index = Math.floor(Math.random() * objects.length);
@@ -274,6 +276,48 @@ function getRandomObject() {
     'Paper',
     'Pencil',
     'Scissors',
+    'Rock',
+    'Bug',
+    'Ladybug',
+    'Bee',
+    'Cat',
+    'Ring',
+    'Rat',
+    'Circle',
+    'Brick',
+    'Icecream',
+    'Chocolate',
+    'Alcohol',
+    'Coffee',
+    'Tea',
+    'Milk',
+    'Meat',
+    'Chicken',
+    'Ship',
+    'Brazil',
+    'China',
+    'USA',
+    'Canada',
+    'Italy',
+    'France',
+    'South Africa',
+    'Beetle',
+    'Mouse',
+    'Headset',
+    'Keys',
+    'Keyboard',
+    'Desktop',
+    'Flipflop',
+    'Germany',
+    'Knife',
+    'Weapon',
+    'Fork',
+    'Road',
+    'Spoon',
+    'Silver',
+    'Gold',
+    'Diamond',
     'Beach'
   ];
   
+ NumberWord.innerHTML = `The game have <strong>${objects.length}</strong> words`
